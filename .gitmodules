@@ -1,0 +1,6 @@
+[submodule "ichigoplus"]
+	path = ichigoplus
+	url = https://github.com/KITrobopuro/ichigoplus.git
+[submodule "layer_driver/device"]
+	path = layer_driver/device
+	url = https://github.com/KITrobopuro/device-Centaurus.git
