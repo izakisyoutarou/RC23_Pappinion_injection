@@ -245,6 +245,7 @@
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryActionFeedback.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_atadrive.c" path="../layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_atadrive.c" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Invite.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Invite.hpp" type="1"/>
+    <File name="ichigoplus/lib_src" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/move_base_msgs/MoveBaseAction.hpp" path="../ichigoplus/layer_controller/ros_lib/move_base_msgs/MoveBaseAction.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/FollowPathFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/FollowPathFeedback.hpp" type="1"/>
@@ -253,23 +254,35 @@
     <File name="ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/GetInteraction.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/GetInteraction.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/base/logging.cpp" path="../ichigoplus/layer_driver/base/logging.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/TransformStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/TransformStamped.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryGoal.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestResult.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestResult.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+=======
+    <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestResult.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestResult.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dread.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dread.html" type="1"/>
     <File name="ichigoplus/layer_controller/dc_motor_controller.cpp" path="../ichigoplus/layer_controller/dc_motor_controller.cpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_syscfg.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/mkdir.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/mkdir.html" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetRobotInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetRobotInfo.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetTransform.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetTransform.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetRobotInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetRobotInfo.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chdir.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chdir.html" type="1"/>
     <File name="ichigoplus/layer_driver/base" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/CmdPoseService.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/CmdPoseService.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_driver/base/i2c.cpp" path="../ichigoplus/layer_driver/base/i2c.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/MotorPower.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/MotorPower.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/cartographer_ros_msgs/StartTrajectory.hpp" path="../ichigoplus/layer_controller/ros_lib/cartographer_ros_msgs/StartTrajectory.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.c" path="../layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.c" type="1"/>
+=======
+    <File name="ichigoplus/layer_controller/ros_lib/cartographer_ros_msgs/StartTrajectory.hpp" path="../ichigoplus/layer_controller/ros_lib/cartographer_ros_msgs/StartTrajectory.hpp" type="1"/>
+    <File name="layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.c" path="../layer_driver/device/stm32f4_config/usb/usb_lib/cdc/usbd_cdc_core.c" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/MotorPower.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/MotorPower.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_can.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_can.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/LinkStates.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/LinkStates.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_can.h" path="../layer_driver/device/stm32f4_config/config_can.h" type="1"/>
@@ -280,8 +293,8 @@
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsAction.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsAction.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/Logging" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/GetInteractions.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/GetInteractions.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedResult.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_boot/startup/startup_stm32f4xx.c" path="../layer_driver/device/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedResult.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/ExternalPower.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/ExternalPower.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_conf/usbd_conf.h" path="../layer_driver/device/stm32f4_config/usb/usb_conf/usbd_conf.h" type="1"/>
@@ -289,18 +302,18 @@
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/Vector3.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/Vector3.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gateway_msgs/RemoteGatewayInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/gateway_msgs/RemoteGatewayInfo.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/Joy.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/Joy.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/astra_camera/GetSerial.hpp" path="../ichigoplus/layer_controller/ros_lib/astra_camera/GetSerial.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/Joy.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/Joy.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/theora_image_transport" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/IrRanger" path="" type="2"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/fdisk.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/fdisk.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/TwistStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/TwistStamped.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rosserial_msgs/TopicInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/rosserial_msgs/TopicInfo.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/realsense_camera/GetIMUInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/realsense_camera/GetIMUInfo.hpp" type="1"/>
-    <File name="ichigoplus/layer_driver/circuit/can_valve_slave.cpp" path="../ichigoplus/layer_driver/circuit/can_valve_slave.cpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_sdio.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/create_node/TurtlebotSensorState.hpp" path="../ichigoplus/layer_controller/ros_lib/create_node/TurtlebotSensorState.hpp" type="1"/>
+    <File name="ichigoplus/layer_driver/circuit/can_valve_slave.cpp" path="../ichigoplus/layer_driver/circuit/can_valve_slave.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/ffconf.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/ffconf.h" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/create_node/TurtlebotSensorState.hpp" path="../ichigoplus/layer_controller/ros_lib/create_node/TurtlebotSensorState.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryControllerState.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryControllerState.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/IncompatibleRappList.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/IncompatibleRappList.hpp" type="1"/>
@@ -309,8 +322,8 @@
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/Polygon.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/Polygon.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionResult.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointTrajectoryActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointTrajectoryActionResult.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/ff.c" path="../layer_driver/device/stm32f4_config/sd/fatfs/ff.c" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointTrajectoryActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointTrajectoryActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/turtle_actionlib/ShapeAction.hpp" path="../ichigoplus/layer_controller/ros_lib/turtle_actionlib/ShapeAction.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestRequestFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestRequestFeedback.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rospy_tutorials" path="" type="2"/>
@@ -332,13 +345,13 @@
     <File name="layer_driver/device" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/ServiceClient/client.py" path="../ichigoplus/layer_controller/ros_lib/examples/ServiceClient/client.py" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/GetPhysicsProperties.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/GetPhysicsProperties.hpp" type="1"/>
-    <File name="layer_driver/device/stm32f4_config/sd/fatfs/ff.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/ff.h" type="1"/>
     <File name="ichigoplus/layer_driver/circuit" path="" type="2"/>
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/ff.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/ff.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryActionFeedback.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.c" path="../layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.c" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/nav_msgs/GetMapActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/nav_msgs/GetMapActionResult.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetSpeechVocabularyActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetSpeechVocabularyActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_application/keyboard_reader.hpp" path="../ichigoplus/layer_application/keyboard_reader.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetSpeechVocabularyActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SetSpeechVocabularyActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/create_node" path="" type="2"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_gpio.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="ichigoplus/README.md" path="../ichigoplus/README.md" type="1"/>
@@ -350,15 +363,19 @@
     <File name="ichigoplus/layer_controller/ros_lib/nav_msgs/GetMapAction.hpp" path="../ichigoplus/layer_controller/ros_lib/nav_msgs/GetMapAction.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/WrenchStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/WrenchStamped.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseWithSpeedActionFeedback.hpp" type="1"/>
-    <File name="ichigoplus/layer_driver/base/util.hpp" path="../ichigoplus/layer_driver/base/util.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadActionFeedback.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/pcl_msgs/PolygonMesh.hpp" path="../ichigoplus/layer_controller/ros_lib/pcl_msgs/PolygonMesh.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/tests/float64_test/float64_test.pde" path="../ichigoplus/layer_controller/ros_lib/tests/float64_test/float64_test.pde" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BoolStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BoolStamped.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/diagnostic_msgs/SelfTest.hpp" path="../ichigoplus/layer_controller/ros_lib/diagnostic_msgs/SelfTest.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rosserial_msgs/RequestServiceInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/rosserial_msgs/RequestServiceInfo.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/Pose2D.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/Pose2D.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc" path="" type="2"/>
+=======
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc" path="" type="2"/>
+    <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/Pose2D.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/Pose2D.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f1.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f1.png" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/BatteryState.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/BatteryState.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/mkfs.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/mkfs.html" type="1"/>
@@ -389,6 +406,11 @@
     <File name="ichigoplus/layer_controller/dc_motor_controller.hpp" path="../ichigoplus/layer_controller/dc_motor_controller.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/visualization_msgs/InteractiveMarkerUpdate.hpp" path="../ichigoplus/layer_controller/ros_lib/visualization_msgs/InteractiveMarkerUpdate.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/topic_tools/DemuxDelete.hpp" path="../ichigoplus/layer_controller/ros_lib/topic_tools/DemuxDelete.hpp" type="1"/>
+<<<<<<< Updated upstream
+=======
+    <File name="ichigoplus/lib_src/utilplus.hpp" path="../ichigoplus/lib_src/utilplus.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLinkProperties.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLinkProperties.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/tf2_msgs/LookupTransformActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/tf2_msgs/LookupTransformActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLinkProperties.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLinkProperties.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingFeedback.hpp" type="1"/>
@@ -404,11 +426,18 @@
     <File name="ichigoplus/layer_driver/circuit/magnetic_magnetic_encoder.hpp" path="../ichigoplus/layer_driver/circuit/magnetic_magnetic_encoder.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryResult.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/JointTrajectoryResult.hpp" type="1"/>
-    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/layers.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/layers.png" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryAction.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryAction.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_controller/ros_lib/trajectory_msgs/JointTrajectoryPoint.hpp" path="../ichigoplus/layer_controller/ros_lib/trajectory_msgs/JointTrajectoryPoint.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/smach_msgs/SmachContainerStructure.hpp" path="../ichigoplus/layer_controller/ros_lib/smach_msgs/SmachContainerStructure.hpp" type="1"/>
+=======
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/layers.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/layers.png" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseResult.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/trajectory_msgs/JointTrajectoryPoint.hpp" path="../ichigoplus/layer_controller/ros_lib/trajectory_msgs/JointTrajectoryPoint.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/smach_msgs/SmachContainerStructure.hpp" path="../ichigoplus/layer_controller/ros_lib/smach_msgs/SmachContainerStructure.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingActionFeedback.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/humanoid_nav_msgs/ExecFootstepsActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/humanoid_nav_msgs/ExecFootstepsActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/AutoDockingActionFeedback.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_usart.h" path="../layer_driver/device/stm32f4_config/config_usart.h" type="1"/>
@@ -435,9 +464,15 @@
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/FadeRGB.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/FadeRGB.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointAnglesWithSpeedAction.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointAnglesWithSpeedAction.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionActionGoal.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/diskio.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/diskio.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/advanced_encoder.hpp" path="../ichigoplus/layer_controller/advanced_encoder.hpp" type="1"/>
+=======
+    <File name="ichigoplus/layer_controller/advanced_encoder.hpp" path="../ichigoplus/layer_controller/advanced_encoder.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciActionGoal.hpp" type="1"/>
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/diskio.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/diskio.h" type="1"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/tests/float64_test" path="" type="2"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_flash.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_i2c.c" path="../layer_driver/device/stm32f4_config/config_i2c.c" type="1"/>
@@ -445,6 +480,7 @@
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/getfree.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/getfree.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/RemoconStatus.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs/RemoconStatus.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_service_pair_msgs/TestiesRequest.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_service_pair_msgs/TestiesRequest.hpp" type="1"/>
+    <File name="ichigoplus/lib_src/utilplus.cpp" path="../ichigoplus/lib_src/utilplus.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_port.c" path="../layer_driver/device/stm32f4_config/config_port.c" type="1"/>
     <File name="layer_driver/device/cmsis_lib/include/misc.h" path="../layer_driver/device/cmsis_lib/include/misc.h" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/readdir.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/readdir.html" type="1"/>
@@ -786,6 +822,10 @@
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadAction.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadAction.hpp" type="1"/>
     <File name="layer_driver/device/syscalls/syscalls.c" path="../layer_driver/device/syscalls/syscalls.c" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/rename.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/rename.html" type="1"/>
+<<<<<<< Updated upstream
+=======
+    <File name="ichigoplus/layer_controller/ros_lib/std_msgs" path="" type="2"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/std_msgs/Bool.hpp" path="../ichigoplus/layer_controller/ros_lib/std_msgs/Bool.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/std_msgs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_std_msgs/KeyValue.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_std_msgs/KeyValue.hpp" type="1"/>
@@ -796,7 +836,10 @@
     <File name="ichigoplus/layer_driver/base/spi.hpp" path="../ichigoplus/layer_driver/base/spi.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/MagneticField.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/MagneticField.hpp" type="1"/>
     <File name="ichigoplus/.git" path="../ichigoplus/.git" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_application/cycle_once.hpp" path="../ichigoplus/layer_application/cycle_once.hpp" type="1"/>
+=======
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/laser_assembler/AssembleScans.hpp" path="../ichigoplus/layer_controller/ros_lib/laser_assembler/AssembleScans.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/opendir.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/opendir.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_std_msgs/Remapping.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_std_msgs/Remapping.hpp" type="1"/>
@@ -850,7 +893,10 @@
     <File name="ichigoplus/layer_driver/circuit/digital_valve.cpp" path="../ichigoplus/layer_driver/circuit/digital_valve.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_dcd.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_dcd.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_interaction_msgs" path="" type="2"/>
+<<<<<<< Updated upstream
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sdir.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sdir.html" type="1"/>
+=======
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/zeroconf_msgs/Protocols.hpp" path="../ichigoplus/layer_controller/ros_lib/zeroconf_msgs/Protocols.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/ScanAngle.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/ScanAngle.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/setlabel.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/setlabel.html" type="1"/>
@@ -904,8 +950,8 @@
     <File name="layer_driver/device/stm32f4_config/usb" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/BlinkM" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/Vector3Stamped.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/Vector3Stamped.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/astra_camera" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs" path="" type="2"/>
+    <File name="ichigoplus/layer_controller/ros_lib/astra_camera" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/realsense_camera/IMUInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/realsense_camera/IMUInfo.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Status.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Status.hpp" type="1"/>
@@ -947,34 +993,33 @@
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/SingleJointPositionActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_application/cycle_checker.cpp" path="../ichigoplus/layer_application/cycle_checker.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/IrRanger/IrRanger.pde" path="../ichigoplus/layer_controller/ros_lib/examples/IrRanger/IrRanger.pde" type="1"/>
-    <File name="ichigoplus/layer_driver/base/util.h" path="../ichigoplus/layer_driver/base/util.h" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/turtlesim/TeleportRelative.hpp" path="../ichigoplus/layer_controller/ros_lib/turtlesim/TeleportRelative.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/turtle_actionlib" path="" type="2"/>
+    <File name="ichigoplus/layer_controller/ros_lib/turtlesim/TeleportRelative.hpp" path="../ichigoplus/layer_controller/ros_lib/turtlesim/TeleportRelative.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib_tutorials/AveragingActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib_tutorials/AveragingActionGoal.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/examples/ServoControl" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/tf2_msgs/TFMessage.hpp" path="../ichigoplus/layer_controller/ros_lib/tf2_msgs/TFMessage.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/roscpp/Empty.hpp" path="../ichigoplus/layer_controller/ros_lib/roscpp/Empty.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/examples/ServoControl" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/ModelStates.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/ModelStates.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/roscpp/Empty.hpp" path="../ichigoplus/layer_controller/ros_lib/roscpp/Empty.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/bourns_1.hpp" path="../ichigoplus/layer_driver/circuit/bourns_1.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestRequestResult.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestRequestResult.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/PublishedInterface.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/PublishedInterface.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/visualization_msgs/InteractiveMarkerInit.hpp" path="../ichigoplus/layer_controller/ros_lib/visualization_msgs/InteractiveMarkerInit.hpp" type="1"/>
-    <File name="ichigoplus/layer_driver/circuit/potentio.cpp" path="../ichigoplus/layer_driver/circuit/potentio.cpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/PublishedInterface.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/PublishedInterface.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/std_msgs/UInt32MultiArray.hpp" path="../ichigoplus/layer_controller/ros_lib/std_msgs/UInt32MultiArray.hpp" type="1"/>
+    <File name="ichigoplus/layer_driver/circuit/potentio.cpp" path="../ichigoplus/layer_driver/circuit/potentio.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/turtle_actionlib/Velocity.hpp" path="../ichigoplus/layer_controller/ros_lib/turtle_actionlib/Velocity.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/core/usbd_def.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/core/usbd_def.h" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestFeedback.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/BodyPoseActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointAnglesWithSpeedResult.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/JointAnglesWithSpeedResult.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f6.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f6.png" type="1"/>
     <File name="ichigoplus/layer_application/cycle_checker.hpp" path="../ichigoplus/layer_application/cycle_checker.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_encoder.h" path="../layer_driver/device/stm32f4_config/config_encoder.h" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/roscpp_tutorials" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/bond" path="" type="2"/>
+    <File name="ichigoplus/layer_controller/ros_lib/roscpp_tutorials" path="" type="2"/>
     <File name="ichigoplus/layer_driver/base/timer_interrupt.cpp" path="../ichigoplus/layer_driver/base/timer_interrupt.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetInstalledBehaviors.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/GetInstalledBehaviors.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/topic_tools/MuxDelete.hpp" path="../ichigoplus/layer_controller/ros_lib/topic_tools/MuxDelete.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/actionlib/TestActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TestActionGoal.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/rwtest3.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/rwtest3.png" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/bond/Status.hpp" path="../ichigoplus/layer_controller/ros_lib/bond/Status.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/capabilities/CapabilityEvent.hpp" path="../ichigoplus/layer_controller/ros_lib/capabilities/CapabilityEvent.hpp" type="1"/>
@@ -984,31 +1029,37 @@
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/printf.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/printf.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLightProperties.hpp" path="../ichigoplus/layer_controller/ros_lib/gazebo_msgs/SetLightProperties.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/examples/BlinkM/BlinkM.pde" path="../ichigoplus/layer_controller/ros_lib/examples/BlinkM/BlinkM.pde" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Rapp.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Rapp.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/topic_tools/MuxSelect.hpp" path="../ichigoplus/layer_controller/ros_lib/topic_tools/MuxSelect.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Rapp.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_app_manager_msgs/Rapp.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/StringStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/StringStamped.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryActionGoal.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SpeechWithFeedbackActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SpeechWithFeedbackActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_encoder.cpp" path="../ichigoplus/layer_driver/circuit/can_encoder.cpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SpeechWithFeedbackActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/SpeechWithFeedbackActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/digital_valve.hpp" path="../ichigoplus/layer_driver/circuit/digital_valve.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/jy901.cpp" path="../ichigoplus/layer_driver/circuit/jy901.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/CompressedImage.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/CompressedImage.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gateway_msgs/ErrorCodes.hpp" path="../ichigoplus/layer_controller/ros_lib/gateway_msgs/ErrorCodes.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source" path="" type="2"/>
-    <File name="ichigoplus/layer_controller/ros_lib/map_msgs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/RobotStateEvent.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/RobotStateEvent.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/map_msgs" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib_tutorials/FibonacciGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/RunBehaviorActionFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/naoqi_bridge_msgs/RunBehaviorActionFeedback.hpp" type="1"/>
-    <File name="ichigoplus/layer_controller/ros_lib/bond/Constants.hpp" path="../ichigoplus/layer_controller/ros_lib/bond/Constants.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/zeroconf_msgs/RemoveListener.hpp" path="../ichigoplus/layer_controller/ros_lib/zeroconf_msgs/RemoveListener.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/bond/Constants.hpp" path="../ichigoplus/layer_controller/ros_lib/bond/Constants.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_rtc.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_rtc.h" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/DigitalOutput.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/DigitalOutput.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadFeedback.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionGoal.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/CliffEvent.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/CliffEvent.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/base/utilplus.cpp" path="../ichigoplus/layer_driver/base/utilplus.cpp" type="1"/>
+=======
+    <File name="ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/actionlib/TwoIntsActionGoal.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadFeedback.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/PointHeadFeedback.hpp" type="1"/>
+    <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs/CliffEvent.hpp" path="../ichigoplus/layer_controller/ros_lib/kobuki_msgs/CliffEvent.hpp" type="1"/>
+>>>>>>> Stashed changes
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/turtle_actionlib/ShapeActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/turtle_actionlib/ShapeActionResult.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/capabilities/GetProviders.hpp" path="../ichigoplus/layer_controller/ros_lib/capabilities/GetProviders.hpp" type="1"/>
@@ -1032,6 +1083,7 @@
     <File name="ichigoplus/layer_controller/ros_lib/visualization_msgs/MarkerArray.hpp" path="../ichigoplus/layer_controller/ros_lib/visualization_msgs/MarkerArray.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/GripperCommandActionResult.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/GripperCommandActionResult.hpp" type="1"/>
     <File name="layer_driver/device/pin.hpp" path="../layer_driver/device/pin.hpp" type="1"/>
+    <File name="ichigoplus/lib_src/coord.hpp" path="../ichigoplus/lib_src/coord.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_conf" path="" type="2"/>
     <File name="layer_driver/device/pin.cpp" path="../layer_driver/device/pin.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/sensor_msgs/CameraInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/sensor_msgs/CameraInfo.hpp" type="1"/>
@@ -1044,8 +1096,11 @@
     <File name="ichigoplus/layer_controller" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/rocon_std_msgs/StringsPairRequest.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_std_msgs/StringsPairRequest.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/shape_msgs/Mesh.hpp" path="../ichigoplus/layer_controller/ros_lib/shape_msgs/Mesh.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryResult.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/FollowJointTrajectoryResult.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/base/util.c" path="../ichigoplus/layer_driver/base/util.c" type="1"/>
+=======
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/create_node/Drive.hpp" path="../ichigoplus/layer_controller/ros_lib/create_node/Drive.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/gateway_msgs/AdvertiseAll.hpp" path="../ichigoplus/layer_controller/ros_lib/gateway_msgs/AdvertiseAll.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/diagnostic_msgs/DiagnosticArray.hpp" path="../ichigoplus/layer_controller/ros_lib/diagnostic_msgs/DiagnosticArray.hpp" type="1"/>
@@ -1066,8 +1121,13 @@
     <File name="ichigoplus/layer_controller/ros_lib/control_msgs/GripperCommandGoal.hpp" path="../ichigoplus/layer_controller/ros_lib/control_msgs/GripperCommandGoal.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f2.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f2.png" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/readme_ub.txt" path="../layer_driver/device/stm32f4_config/sd/fatfs/readme_ub.txt" type="1"/>
+<<<<<<< Updated upstream
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dinit.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dinit.html" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs" path="" type="2"/>
+=======
+    <File name="ichigoplus/layer_controller/ros_lib/kobuki_msgs" path="" type="2"/>
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dinit.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dinit.html" type="1"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/dynamic_reconfigure/GroupState.hpp" path="../ichigoplus/layer_controller/ros_lib/dynamic_reconfigure/GroupState.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/std_msgs/Int16MultiArray.hpp" path="../ichigoplus/layer_controller/ros_lib/std_msgs/Int16MultiArray.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_boot/stm32f4xx.h" path="../layer_driver/device/cmsis_boot/stm32f4xx.h" type="1"/>
@@ -1101,8 +1161,13 @@
     <File name="ichigoplus/layer_controller/ros_lib/roscpp_tutorials/TwoInts.hpp" path="../ichigoplus/layer_controller/ros_lib/roscpp_tutorials/TwoInts.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/std_msgs/ByteMultiArray.hpp" path="../ichigoplus/layer_controller/ros_lib/std_msgs/ByteMultiArray.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/base/digital.hpp" path="../ichigoplus/layer_driver/base/digital.hpp" type="1"/>
+<<<<<<< Updated upstream
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/core" path="" type="2"/>
     <File name="ichigoplus/layer_controller/ros_lib/topic_tools/MuxList.hpp" path="../ichigoplus/layer_controller/ros_lib/topic_tools/MuxList.hpp" type="1"/>
+=======
+    <File name="ichigoplus/layer_controller/ros_lib/topic_tools/MuxList.hpp" path="../ichigoplus/layer_controller/ros_lib/topic_tools/MuxList.hpp" type="1"/>
+    <File name="layer_driver/device/stm32f4_config/usb/usb_lib/core" path="" type="2"/>
+>>>>>>> Stashed changes
     <File name="ichigoplus/layer_controller/ros_lib/rocon_std_msgs/MasterInfo.hpp" path="../ichigoplus/layer_controller/ros_lib/rocon_std_msgs/MasterInfo.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/humanoid_nav_msgs/StepTargetService.hpp" path="../ichigoplus/layer_controller/ros_lib/humanoid_nav_msgs/StepTargetService.hpp" type="1"/>
     <File name="ichigoplus/layer_controller/ros_lib/geometry_msgs/AccelWithCovarianceStamped.hpp" path="../ichigoplus/layer_controller/ros_lib/geometry_msgs/AccelWithCovarianceStamped.hpp" type="1"/>
