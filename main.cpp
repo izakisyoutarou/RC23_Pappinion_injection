@@ -1,10 +1,10 @@
 //application
 #include "ichigoplus/layer_application/cycle_checker.hpp"
+#include "ichigoplus/layer_application/cycle_once_checker.hpp"
 #include "ichigoplus/layer_application/timer.hpp"
 #include "ichigoplus/layer_application/console.hpp"
 
 //controller
-
 
 //circuit
 #include "ichigoplus/layer_driver/circuit/emergency.hpp"
@@ -13,6 +13,11 @@
 //device
 #include "layer_driver/device/pin.hpp"
 
+// using
+using encoder::Enc0;
+using encoder::Enc1;
+using encoder::Enc2;
+using encoder::Enc3;
 
 int main(){
 	//cycle period [ms]
@@ -111,8 +116,8 @@ int main(){
 	Enc3 enc3;
 
 	//Can
-	Can0 can0;
-	Can1 can1;
+	Can0 can0;	can0.setup();
+	Can1 can1;	can1.setup();
 
 	//Cycle Timer
 	Timer ctrlCycle;
@@ -123,12 +128,16 @@ int main(){
 	//CycleChecker
 	CycleChecker cycleChecker(ctrl_period);
 	
+	//CycleCounter
+	cycle_once_checker::CycleCounter cycleCounter;
+	
 	//main loop
 	while(1){
 		emergency.cycle();
 
 		if(ctrlCycle()) {
 			cycleChecker.cycle();
+			cycleCounter.cycle();
 
 		}
 
