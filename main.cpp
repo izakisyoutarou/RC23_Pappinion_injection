@@ -3,6 +3,7 @@
 #include "ichigoplus/layer_application/cycle_once_checker.hpp"
 #include "ichigoplus/layer_application/timer.hpp"
 #include "ichigoplus/layer_application/console.hpp"
+#include "ichigoplus/layer_application/execute_function.hpp"
 
 //controller
 
@@ -105,6 +106,10 @@ int main(){
 	cons.setup(115200);
 	cons.setNewLine(Console::NEWLINE_CRLF);
 
+	//ExecuteFunction
+	ExecuteFunction exeFunc("func");
+	cons.addCommand(exeFunc);
+
 	//Sbdbt
 	Sbdbt psCon(serial5);
 	psCon.setup();
@@ -130,6 +135,9 @@ int main(){
 	
 	//CycleCounter
 	cycle_once_checker::CycleCounter cycleCounter;
+
+	//ExecuteFunction(add func)
+	exeFunc.addFunc("reset", [&]{ NVIC_SystemReset(); });
 	
 	//main loop
 	while(1){
