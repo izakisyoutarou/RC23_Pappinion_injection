@@ -1,17 +1,17 @@
-//application
+// application
 #include "ichigoplus/layer_application/cycle_checker.hpp"
 #include "ichigoplus/layer_application/cycle_once_checker.hpp"
 #include "ichigoplus/layer_application/timer.hpp"
 #include "ichigoplus/layer_application/console.hpp"
 #include "ichigoplus/layer_application/execute_function.hpp"
 
-//controller
+// controller
 
-//circuit
+// circuit
 #include "ichigoplus/layer_driver/circuit/emergency.hpp"
 #include "ichigoplus/layer_driver/circuit/sbdbt.hpp"
 
-//device
+// device
 #include "layer_driver/device/pin.hpp"
 
 // using
@@ -21,17 +21,17 @@ using encoder::Enc2;
 using encoder::Enc3;
 
 int main(){
-	//cycle period [ms]
+	// cycle period [ms]
 	constexpr int ctrl_period = 2;
 	constexpr int disp_period = 100;
 
-	//Emergency
+	// Emergency
 	EmergencySwitch e_switch; e_switch.setupDigitalOut();
 	EmergencyRead	e_read;	e_read.digitalRead();
 	Emergency emergency(e_switch, e_read);
 	emergency.setup();
 
-	//LED
+	// LED
 	Led0 led0;led0.setupDigitalOut();
 	Led1 led1;led1.setupDigitalOut();
 	Led2 led2;led2.setupDigitalOut();
@@ -40,30 +40,30 @@ int main(){
 	Led5 led5;led5.setupDigitalOut();
 	ResetLed resetled;resetled.setupDigitalOut();
 
-	//full color LED
+	// Full Color LED
 	Red red;
 	Blue blue;
 	Green green;
 
-	//cycle LED
+	// Cycle LED
 	auto &cycleLed = green;
 	green.setupDigitalOut();
 	
-	//LCD
+	// LCD
 	LCDBackLight lcdbl;lcdbl.setupDigitalOut();
 	lcdbl.digitalHigh();
 	I2c0 i2c;
 
-	//Buzzer
+	// Buzzer
 	Buzzer buzzer; buzzer.setupPwmOut(2500.0,0.0);
 
-	//Switch
+	// Switch
 	Sw0 sw0;sw0.setupDigitalIn();
 	Sw1 sw1;sw1.setupDigitalIn();
 	Sw2 sw2;sw2.setupDigitalIn();
 	Sw3 sw3;sw3.setupDigitalIn();
 
-	//Pwm
+	// Pwm
 	Pwm0 pwm0;
 	Pwm1 pwm1;
 	Pwm2 pwm2;
@@ -71,19 +71,19 @@ int main(){
 	Pwm4 pwm4;
 	Pwm5 pwm5;
 
-	//Varaible-Voltage(3.3V/5V)inDigital
+	// Varaible-Voltage(3.3V/5V)inDigital
 	D0 d0;
 	D1 d1;
 	D2 d2;
 	D3 d3;
 
-	//5V digital
+	// 5V digital
 	D5v0 d5v0;
 	D5v1 d5v1;
 	D5v2 d5v2;
 	D5v3 d5v3;
 
-	//Analog, Digital
+	// Analog, Digital
 	A0 a0;
 	A1 a1;
 	A2 a2;
@@ -93,7 +93,7 @@ int main(){
 	A6 a6;
 	A7 a7;
 
-	//Serial
+	// Serial
 	Serial0 forCons;
 	Serial1 serial1;
 	Serial2 serial2;
@@ -101,45 +101,45 @@ int main(){
 	Serial4 serial4;
 	Serial5 serial5;
 
-	//Console
+	// Console
 	Console cons(forCons);
 	cons.setup(115200);
 	cons.setNewLine(Console::NEWLINE_CRLF);
 
-	//ExecuteFunction
+	// ExecuteFunction
 	ExecuteFunction exeFunc("func");
 	cons.addCommand(exeFunc);
 
-	//Sbdbt
+	// Sbdbt
 	Sbdbt psCon(serial5);
 	psCon.setup();
 
-	//Encoder
+	// Encoder
 	Enc0 enc0;
 	Enc1 enc1;
 	Enc2 enc2;
 	Enc3 enc3;
 
-	//Can
+	// Can
 	Can0 can0;	can0.setup();
 	Can1 can1;	can1.setup();
 
-	//Cycle Timer
+	// Cycle Timer
 	Timer ctrlCycle;
 	ctrlCycle(ctrl_period, true);
 	Timer dispCycle;
 	dispCycle(disp_period, true);
 
-	//CycleChecker
+	// CycleChecker
 	CycleChecker cycleChecker(ctrl_period);
 	
-	//CycleCounter
+	// CycleCounter
 	cycle_once_checker::CycleCounter cycleCounter;
 
-	//ExecuteFunction(add func)
+	// ExecuteFunction(add func)
 	exeFunc.addFunc("reset", [&]{ NVIC_SystemReset(); });
 	
-	//main loop
+	// main loop
 	while(1){
 		emergency.cycle();
 
