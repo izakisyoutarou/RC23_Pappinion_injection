@@ -4,12 +4,21 @@
 #include "ichigoplus/layer_application/timer.hpp"
 #include "ichigoplus/layer_application/console.hpp"
 #include "ichigoplus/layer_application/execute_function.hpp"
+#include "ichigoplus/layer_application/pid_gain.hpp"
 
 // controller
+#include "ichigoplus/layer_controller/brush_motor_pos_vel_controller.hpp"
+#include "ichigoplus/layer_controller/trapezoidal_velocity_planner.hpp"
+#include "ichigoplus/layer_controller/siso_controller.hpp"
+#include "ichigoplus/layer_controller/position_pid.hpp"
+#include "ichigoplus/layer_controller/filtered_encoder.hpp"
+#include "layer_controller/belt_collecter.hpp"
 
 // circuit
 #include "ichigoplus/layer_driver/circuit/emergency.hpp"
 #include "ichigoplus/layer_driver/circuit/sbdbt.hpp"
+#include "ichigoplus/layer_driver/circuit/can_motor_driver.hpp"
+#include "ichigoplus/layer_driver/circuit/can_encoder.hpp"
 
 // device
 #include "layer_driver/device/pin.hpp"
@@ -19,11 +28,13 @@ using encoder::Enc0;
 using encoder::Enc1;
 using encoder::Enc2;
 using encoder::Enc3;
+using TraVelPlanner = velocity_planner::trapezoidal_velocity_planner::TrapezoidalVelocityPlanner;
+using TraVelPlannerLimit = velocity_planner::trapezoidal_velocity_planner::Limit_t;
 
 int main(){
 	// cycle period [ms]
 	constexpr int ctrl_period = 2;
-	constexpr int disp_period = 100;
+	constexpr int disp_period = 10;
 
 	// Emergency
 	EmergencySwitch e_switch; e_switch.setupDigitalOut();
@@ -121,8 +132,36 @@ int main(){
 	Enc3 enc3;
 
 	// Can
-	Can0 can0;	can0.setup();
-	Can1 can1;	can1.setup();
+	Can0 can0; can0.setup();
+	encoder::CanEncoder canEnc0(can0,0,ctrl_period); canEnc0.setup(); canEnc0.cpr(400);
+	encoder::FilteredEncoder filEnc0(canEnc0); filEnc0.setup(); filEnc0.rev(true);
+	Can1 can1; can1.setup();
+	encoder::CanEncoder canEnc1(can1,0,ctrl_period); canEnc1.setup(); canEnc1.cpr(400);
+	encoder::FilteredEncoder filEnc1(canEnc1); filEnc1.setup(); filEnc1.rev(true);
+
+	//CanMoterDriver
+	CanMotorDriver canMd0(can0,0); canMd0.outRev(true); canMd0.currentLimit(CanMotorDriver::LIMIT_AVG, 100.f);
+	CanMotorDriver canMd1(can1,0); canMd1.outRev(true); canMd1.currentLimit(CanMotorDriver::LIMIT_AVG, 100.f);
+
+	//tvplanner
+	const TraVelPlannerLimit tvplimit(M_PI*1000000.f, M_PI*23.f,M_PI*5.f,M_PI*5.f);
+	TraVelPlanner tvp0(tvplimit);
+	TraVelPlanner tvp1(tvplimit);
+
+	//siso_controlleer
+	siso_controller::PositionPid pid0; pid0.gain(1.f, 0.f, 0.f);
+	console::PidGain pidGain0; pidGain0.add("g0", pid0); cons.addCommand(pidGain0);
+	siso_controller::PositionPid pid1; pid1.gain(1.f, 0.f, 0.f);
+	console::PidGain pidGain1; pidGain1.add("g1", pid0); cons.addCommand(pidGain1);
+
+	//BrushMotorPosVelController
+	BrushMotorPosVelController mc0(canMd0, filEnc0, tvp0, pid0); mc0.setup(); mc0.rotateRatio(1.f,1.f); mc0.limitDuty(-0.3f, 0.3f); mc0.outRev(true);
+	mc0.commandName("mc0"); cons.addCommand(mc0);
+	BrushMotorPosVelController mc1(canMd1, filEnc1, tvp1, pid1); mc1.setup(); mc1.rotateRatio(1.f,1.f); mc1.limitDuty(-0.3f, 0.3f); mc1.outRev(true);
+	mc0.commandName("mc1"); cons.addCommand(mc1);
+
+	//other
+	BeltCollecter beltcollectet(mc0, mc1);
 
 	// Cycle Timer
 	Timer ctrlCycle;
@@ -139,6 +178,9 @@ int main(){
 	// ExecuteFunction(add func)
 	exeFunc.addFunc("reset", [&]{ NVIC_SystemReset(); });
 	
+	exeFunc.addFunc("start", [&]{ beltcollectet.start(3.14); });
+	exeFunc.addFunc("stop", [&]{ beltcollectet.stop(); });
+
 	// main loop
 	while(1){
 		emergency.cycle();
@@ -146,7 +188,10 @@ int main(){
 		if(ctrlCycle()) {
 			cycleChecker.cycle();
 			cycleCounter.cycle();
-
+			canEnc0.cycle();
+			canEnc1.cycle();
+			canMd0.cycle();
+			canMd1.cycle();
 		}
 
 		if(dispCycle()) {
