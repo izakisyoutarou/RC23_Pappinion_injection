@@ -109,9 +109,9 @@
     <File name="ichigoplus/layer_driver/base/can.hpp" path="../ichigoplus/layer_driver/base/can.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dwrite.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dwrite.html" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_i2c.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name="ichigoplus/layer_driver/base/pwm.cpp" path="../ichigoplus/layer_driver/base/pwm.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/rotary_sw.cpp" path="../ichigoplus/layer_driver/circuit/rotary_sw.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_motor_driver_current.cpp" path="../ichigoplus/layer_driver/circuit/can_motor_driver_current.cpp" type="1"/>
+    <File name="ichigoplus/layer_driver/base/pwm.cpp" path="../ichigoplus/layer_driver/base/pwm.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/virtual_mechanism.hpp" path="../ichigoplus/layer_controller/virtual_mechanism.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/core/usbd_req.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/core/usbd_req.h" type="1"/>
     <File name="ichigoplus/layer_controller/odometry.hpp" path="../ichigoplus/layer_controller/odometry.hpp" type="1"/>
@@ -226,8 +226,8 @@
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chdrive.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chdrive.html" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_systick.h" path="../layer_driver/device/stm32f4_config/config_systick.h" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dread.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/dread.html" type="1"/>
-    <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_defines.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_defines.h" type="1"/>
+    <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
     <File name="ichigoplus/layer_controller/trapezoidal_velocity_planner.hpp" path="../ichigoplus/layer_controller/trapezoidal_velocity_planner.hpp" type="1"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_syscfg.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
@@ -251,9 +251,9 @@
     <File name="layer_driver/device/cmsis_boot/startup/startup_stm32f4xx.c" path="../layer_driver/device/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs" path="" type="2"/>
     <File name="ichigoplus/layer_driver/circuit/can_motor_driver.hpp" path="../ichigoplus/layer_driver/circuit/can_motor_driver.hpp" type="1"/>
-    <File name="ichigoplus/layer_driver/circuit/can_motor_driver_voltage.hpp" path="../ichigoplus/layer_driver/circuit/can_motor_driver_voltage.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_conf/usbd_conf.h" path="../layer_driver/device/stm32f4_config/usb/usb_conf/usbd_conf.h" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/emergency.cpp" path="../ichigoplus/layer_driver/circuit/emergency.cpp" type="1"/>
+    <File name="ichigoplus/layer_driver/circuit/can_motor_driver_voltage.hpp" path="../ichigoplus/layer_driver/circuit/can_motor_driver_voltage.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_valve.cpp" path="../ichigoplus/layer_driver/circuit/can_valve.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.h" path="../layer_driver/device/stm32f4_config/sd/fatfs/lo_level_ub/stm32_ub_sdcard.h" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/motor_driver.cpp" path="../ichigoplus/layer_driver/circuit/motor_driver.cpp" type="1"/>
@@ -317,9 +317,9 @@
     <File name="ichigoplus/layer_driver/circuit/can_analog_slave.hpp" path="../ichigoplus/layer_driver/circuit/can_analog_slave.hpp" type="1"/>
     <File name="ichigoplus/layer_application" path="" type="2"/>
     <File name="ichigoplus/layer_controller/length_trigger_rotate_planner.hpp" path="../ichigoplus/layer_controller/length_trigger_rotate_planner.hpp" type="1"/>
-    <File name="ichigoplus/layer_driver/base/pwm.hpp" path="../ichigoplus/layer_driver/base/pwm.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/magnetic_potentio.cpp" path="../ichigoplus/layer_driver/circuit/magnetic_potentio.cpp" type="1"/>
     <File name="ichigoplus/layer_application/can_error_checker.cpp" path="../ichigoplus/layer_application/can_error_checker.cpp" type="1"/>
+    <File name="ichigoplus/layer_driver/base/pwm.hpp" path="../ichigoplus/layer_driver/base/pwm.hpp" type="1"/>
     <File name="layer_driver/device/.git" path="../layer_driver/device/.git" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source/stm32f4xx_dma.c" path="../layer_driver/device/cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb" path="" type="2"/>
@@ -353,9 +353,9 @@
     <File name="ichigoplus/layer_application/switching_disp.hpp" path="../ichigoplus/layer_application/switching_disp.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/bourns_1.hpp" path="../ichigoplus/layer_driver/circuit/bourns_1.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/config_usb.c" path="../layer_driver/device/stm32f4_config/usb/config_usb.c" type="1"/>
-    <File name="ichigoplus/layer_driver/circuit/eeprom.cpp" path="../ichigoplus/layer_driver/circuit/eeprom.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/potentio.cpp" path="../ichigoplus/layer_driver/circuit/potentio.cpp" type="1"/>
     <File name="ichigoplus/layer_application/keyboard_reader.cpp" path="../ichigoplus/layer_application/keyboard_reader.cpp" type="1"/>
+    <File name="ichigoplus/layer_driver/circuit/eeprom.cpp" path="../ichigoplus/layer_driver/circuit/eeprom.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/config_usart.c" path="../layer_driver/device/stm32f4_config/config_usart.c" type="1"/>
     <File name="ichigoplus/layer_application/cycle_once_checker.cpp" path="../ichigoplus/layer_application/cycle_once_checker.cpp" type="1"/>
     <File name="layer_driver/device/mcutime.c" path="../layer_driver/device/mcutime.c" type="1"/>
@@ -398,20 +398,20 @@
     <File name="ichigoplus/uml/0106_can_encoder_slave.pu" path="../ichigoplus/uml/0106_can_encoder_slave.pu" type="1"/>
     <File name="ichigoplus/layer_controller/photo_interrputer.hpp" path="../ichigoplus/layer_controller/photo_interrputer.hpp" type="1"/>
     <File name="ichigoplus/layer_application/execute_function.hpp" path="../ichigoplus/layer_application/execute_function.hpp" type="1"/>
-    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sync.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sync.html" type="1"/>
     <File name="ichigoplus/lib_src/filter.hpp" path="../ichigoplus/lib_src/filter.hpp" type="1"/>
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/chmod.html" type="1"/>
     <File name="layer_driver/device/cmsis_lib/source" path="" type="2"/>
     <File name="ichigoplus/layer_controller/simple_rotate_planner.hpp" path="../ichigoplus/layer_controller/simple_rotate_planner.hpp" type="1"/>
-    <File name="ichigoplus/lib_src/sample_mode.hpp" path="../ichigoplus/lib_src/sample_mode.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/sm_motor_driver.cpp" path="../ichigoplus/layer_driver/circuit/sm_motor_driver.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_motor_driver_current.hpp" path="../ichigoplus/layer_driver/circuit/can_motor_driver_current.hpp" type="1"/>
+    <File name="ichigoplus/lib_src/sample_mode.hpp" path="../ichigoplus/lib_src/sample_mode.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sfatfs.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/sfatfs.html" type="1"/>
     <File name="layer_driver/device/cmsis_lib/include/stm32f4xx_rtc.h" path="../layer_driver/device/cmsis_lib/include/stm32f4xx_rtc.h" type="1"/>
     <File name="ichigoplus/layer_controller/switch.hpp" path="../ichigoplus/layer_controller/switch.hpp" type="1"/>
-    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/fattime.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/fattime.html" type="1"/>
     <File name="layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_dcd_int.h" path="../layer_driver/device/stm32f4_config/usb/usb_lib/otg/usb_dcd_int.h" type="1"/>
+    <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/unlink.html" type="1"/>
     <File name="ichigoplus/layer_controller/filtered_encoder.cpp" path="../ichigoplus/layer_controller/filtered_encoder.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_id.cpp" path="../ichigoplus/layer_driver/circuit/can_id.cpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/name_converter.c" path="../layer_driver/device/stm32f4_config/name_converter.c" type="1"/>
@@ -456,6 +456,7 @@
     <File name="ichigoplus/layer_driver/circuit/motor_driver.hpp" path="../ichigoplus/layer_driver/circuit/motor_driver.hpp" type="1"/>
     <File name="ichigoplus/uml/0104_filtered_encoder.pu" path="../ichigoplus/uml/0104_filtered_encoder.pu" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_power_voltage.cpp" path="../ichigoplus/layer_driver/circuit/can_power_voltage.cpp" type="1"/>
+    <File name="layer_controller/Rappinion_injection.cpp" path="../layer_controller/Rappinion_injection.cpp" type="1"/>
     <File name="ichigoplus/layer_controller/extended_range_absolute_encoder.hpp" path="../ichigoplus/layer_controller/extended_range_absolute_encoder.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f2.png" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/img/f2.png" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_power_voltage.hpp" path="../ichigoplus/layer_driver/circuit/can_power_voltage.hpp" type="1"/>
@@ -494,6 +495,7 @@
     <File name="ichigoplus/layer_driver/circuit/aqm0802.hpp" path="../ichigoplus/layer_driver/circuit/aqm0802.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/base/serial.cpp" path="../ichigoplus/layer_driver/base/serial.cpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_analog.cpp" path="../ichigoplus/layer_driver/circuit/can_analog.cpp" type="1"/>
+    <File name="layer_controller/Rappinion_injection.hpp" path="../layer_controller/Rappinion_injection.hpp" type="1"/>
     <File name="ichigoplus/layer_driver/circuit/can_digital_slave.hpp" path="../ichigoplus/layer_driver/circuit/can_digital_slave.hpp" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/en/rc.html" path="../layer_driver/device/stm32f4_config/sd/fatfs/doc/en/rc.html" type="1"/>
     <File name="layer_driver/device/stm32f4_config/sd/fatfs/doc/img" path="" type="2"/>
