@@ -5,22 +5,53 @@ int Rappinion_injection::setup(){
 	i += photo.setup();
 	return i;
 }
+void Rappinion_injection::calbiration(){
+	calbiration_flag=true;
+
+}
 
 void Rappinion_injection::cycle(){
 	//if文は1か0で判断している1は通る0は通らないためこの場合はtrueになれば自動的に入るようになっている
 	//photoはreadしているときは1を返す（反応していない時）
+	// if(calbiration_flag==true){
+	// 	photo.startReading(2.f);
+	// 	if(process==0){
+	// 		if(photo.read()==1){
+	// 			mc0.vel(-0.5);
+	// 		}	
+	// 		else if(photo.read()==0){
+	// 			process++;
+	// 		}
+	// 	}else if(process==1){
+	// 		mc0.vel(0.5);
+	// 		if(photo.read()==1){
+	// 			process++;
+	// 		}
+	// 	}else if(process==2){
+	// 		mc0.vel(0.f);
+	// 		mc0.initPos(0.f);//posの初期化…つまりその位置を原点とする
+	// 		mc0.restart();//後で消す…そのうちinitposだけで良くなる
+	// 		photo.stopReading();
+	// 		calbiration_flag=false;
+	// 		process=0;
+	// 		printf("calibration_finish\n");
+	// 	}
+		
+	// }
+	//mc0.cycle();
+
 	if(calbiration_flag==true){
 		photo.startReading(2.f);
 		if(process==0){
-			if(photo.read()==1){
-				mc0.vel(-0.5);
+			if(photo.read()==0){
+				mc0.vel(0.5);
 			}	
-			else if(photo.read()==0){
+			else if(photo.read()==1){
 				process++;
 			}
 		}else if(process==1){
-			mc0.vel(0.5);
-			if(photo.read()==1){
+			mc0.vel(-0.5);
+			if(photo.read()==0){
 				process++;
 			}
 		}else if(process==2){
@@ -37,10 +68,7 @@ void Rappinion_injection::cycle(){
 	mc0.cycle();
 }
 
-void Rappinion_injection::calbiration(){
-	calbiration_flag=true;
-	
-}
+
 
 void Rappinion_injection::inject(){
 	mc0.pos(50.f);//posはTraVelPlanner関数によって上手く計算されるため速度は書かない

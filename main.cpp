@@ -162,7 +162,7 @@ int main(){
 	//can通信方式なのでcanMd,srcのときはlapmoterだからMd
 	//モーターを逆回転したいときはcanMd0.outRev(false);のfalseをtrueに変える
 	//tvplanner
-	const TraVelPlannerLimit tvplimit(M_PI*1000000.f, M_PI*1000.f,M_PI*1000.f,M_PI*1000.f);
+	const TraVelPlannerLimit tvplimit(M_PI*1000000.f, M_PI*10000.f,M_PI*100000.f,M_PI*100000.f);
 	//速度、加速度制限はここで行う、左から位置　速度　加速度　減速度
 	TraVelPlanner tvp0(tvplimit);
 
@@ -171,7 +171,7 @@ int main(){
 	console::PidGain pidGain0; pidGain0.add("g0", pid0); cons.addCommand(pidGain0);
 
 	//BrushMotorPosVelController
-	BrushMotorPosVelController mc0(canMd0, filEnc0, tvp0, pid0); mc0.rotateRatio(1.f,1.f); mc0.limitDuty(-0.9f, 0.9f);
+	BrushMotorPosVelController mc0(canMd0, filEnc0, tvp0, pid0); mc0.rotateRatio(1.f,1.f); mc0.limitDuty(-0.95f, 0.95f);
 	//クラスはオブジェクト化しないと使うことはできない
 	//クラスの中でクラスを使うときはオブジェクト化したクラスを引数に入れる
 	//この場合はBrushMotorPosVelControllerクラスの中のmc0クラスをオブジェクト化し、その引数にcanMd0, filEnc0, tvp0, pid0を入れている
@@ -223,7 +223,7 @@ int main(){
 			cycleCounter.cycle();
 			rappinion_injection.cycle();
 			canDigital000.cycle();
-
+			//forCons.printf("mc_vel:%f\n",mc0.duty());
 		}
 
 		if(dispCycle()) {
@@ -231,7 +231,10 @@ int main(){
 			 	forCons.printf("cycle was delayed : %lld[ms]\n",cycleChecker.getMaxDelay());
 			 	cycleChecker.reset();
 			 }
+
+
 			 cons.cycle();
+
 			cycleLed.digitalToggle();
 		}
 
