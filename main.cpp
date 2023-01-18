@@ -138,43 +138,49 @@ int main(){
 
 	// Can
 	Can0 can0; can0.setup();
+	Can1 can1; can1.setup();
 	//canは基盤同士を繋いでいる通信機能
 
 	//candigital
 	CanDigital canDigital000(can0,0,0);
+	//使用するPhotoInterrputerの数に応じで増やす、今回は1つなのでcan0のみでok、複数使いたい場合はオブジェクト名をcanDigital000_1などにすること
 
 	//PhotoInterrputer
 	PhotoInt rappinion_photo(canDigital000.pin0, PhotoInt::SetupType::in);
 
-	encoder::CanEncoder canEnc0(can0,0,ctrl_period); canEnc0.setup(); canEnc0.cpr(2000);
+	encoder::CanEncoder canEnc1(can0,0,ctrl_period); canEnc1.setup(); canEnc1.cpr(4000);
 	//今回はcanの0番ポートに繋がっている
 	//canEncは通信先の基盤に繋がっているエンコーダー
 	//can0は基盤が繋がってるcanのポート、0はcan0が繋がっている基盤の先のエンコーダーのポート番号、ctrl_periodは周期
 	//今回はcan0はマクソンのポート、can1はエンコーダーのポート
 	//canEnc.cprは500*4で2000…500の部分はエンコーダーによって変わってくる
-	encoder::FilteredEncoder filEnc0(canEnc0); filEnc0.setup(); filEnc0.rev(false);
+
+	encoder::FilteredEncoder filEnc1(canEnc1); filEnc1.setup(); filEnc1.rev(true);
 	//FilteredEncoderのクラスの中のオブジェクト化したfilEnc0クラスの引数にcanEnc0を入れている,エンコーダーの向きが逆の時はfilEnc0.rev(false);のfalseをtrueに変える
-	encoder::CanEncoder canEnc1(can0,1,ctrl_period); canEnc1.setup(); canEnc1.cpr(400);
-	encoder::FilteredEncoder filEnc1(canEnc1); filEnc1.setup(); filEnc1.rev(false);
+	
 
 	//CanMoterDriver
 	CanMotorDriver canMd0(can0,0); canMd0.outRev(false); canMd0.currentLimit(CanMotorDriver::LIMIT_AVG, 100.f);
 	//can通信方式なのでcanMd,srcのときはlapmoterだからMd
 	//モーターを逆回転したいときはcanMd0.outRev(false);のfalseをtrueに変える
-	//tvplanner
-	const TraVelPlannerLimit tvplimit(M_PI*1000000.f, M_PI*10000.f,M_PI*100000.f,M_PI*100000.f);
-	//速度、加速度制限はここで行う、左から位置　速度　加速度　減速度
-	TraVelPlanner tvp0(tvplimit);
 
+	//tvplanner
+	const TraVelPlannerLimit tvplimit(M_PI*100000.f, M_PI*10000.f,M_PI*100000.f,M_PI*1000.f);
+	//速度、加速度制限はここで行う、左から位置　速度　加速度　減速度
+
+	TraVelPlanner tvp0(tvplimit);
 	//siso_controlleer
-	siso_controller::PositionPid pid0; pid0.gain(0.3f, 0.f, 0.f);
+	siso_controller::PositionPid pid0; pid0.gain(0.1f, 0.0f, 0.f);
+	//pid制御でgain調整左からのp制御,i制御,d制御
+
 	console::PidGain pidGain0; pidGain0.add("g0", pid0); cons.addCommand(pidGain0);
 
 	//BrushMotorPosVelController
-	BrushMotorPosVelController mc0(canMd0, filEnc0, tvp0, pid0); mc0.rotateRatio(1.f,1.f); mc0.limitDuty(-0.95f, 0.95f);
-	//クラスはオブジェクト化しないと使うことはできない
+	BrushMotorPosVelController mc0(canMd0, filEnc1, tvp0, pid0); mc0.rotateRatio(1.f,1.f); mc0.limitDuty(-0.7f,0.7f);
+	//クラスはオブジェクト化しないと使うことはできないオブジェクト名はその場で自由に決めることができる,今回はmc0がオブジェクト名
 	//クラスの中でクラスを使うときはオブジェクト化したクラスを引数に入れる
 	//この場合はBrushMotorPosVelControllerクラスの中のmc0クラスをオブジェクト化し、その引数にcanMd0, filEnc0, tvp0, pid0を入れている
+	//今回の機構はモーターを2つ使っているが基板のmdポートが1つなのでmd関数も1つでいい
 	mc0.commandName("mc0"); cons.addCommand(mc0);
 
 	//other
@@ -188,22 +194,30 @@ int main(){
 
 	// CycleChecker
 	CycleChecker cycleChecker(ctrl_period);
-	
+
 	//CycleCounter
 	cycle_once_checker::CycleCounter cycleCounter;
 
 	// ExecuteFunction(add func)
-	exeFunc.addFunc("reset", [&]{ NVIC_SystemReset(); });
+	exeFunc.addFunc("reset", [&]{ NVIC_SystemReset();});
 	exeFunc.addFunc("cal",[&]{rappinion_injection.calbiration();});
-	exeFunc.addFunc("inject", [&]{ rappinion_injection.inject(); });
-	exeFunc.addFunc("back", [&]{ rappinion_injection.back(); });
-	exeFunc.addFunc("mc", [&]{ mc0.duty(0.2);});
-	exeFunc.addFunc("enc", [&]{ printf("%f,%f\n",filEnc0.radian(),filEnc1.radian());});
+	exeFunc.addFunc("inject", [&]{ rappinion_injection.inject();});
+	//posは現在の値、currentTargetPosはTraVelPlannerによって計算された理想の値、currentTargetPosにposを合わせる感じで調整する
+	//射出のコマンドを打つと同時にprintf関数でposとcurrentTargetPosを動ことで、posの値とcurrentTargetPosの値の差を見ながらgainの値を調整する
+	exeFunc.addFunc("back", [&]{ rappinion_injection.back();});
+	exeFunc.addFunc("mc0", [&]{ mc0.duty(0.2);});   //モーターの回転方向を見たいときは mc0 duty 0.1と入力する
+	//exeFunc.addFunc("duty",[&]{mc0.duty(0.4); mc1.duty(-0.4);});//モーターを回転させる際無限ループにfuncを入れないこと…func duty だけ　入力する
+	//無限ループさせたいときは最後に1文字追加する…func duty a　など
+	exeFunc.addFunc("enc", [&]{ printf("%f\n",filEnc1.radian());});
 	exeFunc.addFunc("photostart", [&]{ rappinion_photo.startReading(2);});
 	exeFunc.addFunc("photo", [&]{ printf("%d\n",rappinion_photo.read());});
+	exeFunc.addFunc("pos",[&]{printf("%f\n",mc0.pos());});
+	exeFunc.addFunc("calentpos",[&]{printf("%f\n",mc0.currentTargetPos());});
 
-	//setup
+	//setusdf
 	int error=0;
+	mc0.setup();
+	rappinion_photo.startReading(2);
 	error += rappinion_injection.setup();
 	error += canDigital000.setup();
 	//canDigital000はメインでセットアップ
@@ -223,7 +237,9 @@ int main(){
 			cycleCounter.cycle();
 			rappinion_injection.cycle();
 			canDigital000.cycle();
+			//PhotoInterrputer(rappinion_photo)にはサイクルがないためcanDigital000単体でサイクルをかけることでphotoの値が見れる。
 			//forCons.printf("mc_vel:%f\n",mc0.duty());
+			mc0.cycle();
 		}
 
 		if(dispCycle()) {

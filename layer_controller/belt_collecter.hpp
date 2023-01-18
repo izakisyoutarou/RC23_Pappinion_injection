@@ -4,12 +4,10 @@
 class BeltCollecter{
 
 public:
-	BeltCollecter(BrushMotorPosVelController &mc0, BrushMotorPosVelController mc1):mc0(mc0), mc1(mc1){};
+	BeltCollecter(BrushMotorPosVelController &mc0):mc0(mc0){};
 	void start(float vel);
 	void stop();
 
 private:
 	BrushMotorPosVelController &mc0;
-	BrushMotorPosVelController &mc1;
-
 };

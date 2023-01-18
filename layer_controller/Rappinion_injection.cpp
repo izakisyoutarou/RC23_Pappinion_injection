@@ -56,8 +56,10 @@ void Rappinion_injection::cycle(){
 			}
 		}else if(process==2){
 			mc0.vel(0.f);
-			mc0.initPos(0.f);//posの初期化…つまりその位置を原点とする
-			mc0.restart();//後で消す…そのうちinitposだけで良くなる
+			mc0.initPos(0.f);
+			//posの初期化…つまりその位置を原点とする
+			mc0.restart();
+			//後で消す…そのうちinitposだけで良くなる
 			photo.stopReading();
 			calbiration_flag=false;
 			process=0;
@@ -66,15 +68,20 @@ void Rappinion_injection::cycle(){
 		
 	}
 	mc0.cycle();
+	
+	
 }
 
 
 
 void Rappinion_injection::inject(){
-	mc0.pos(50.f);//posはTraVelPlanner関数によって上手く計算されるため速度は書かない
-				//posは位置情報、引数に50と入れれば50の位置までモーターが回る
+	mc0.pos(33.f);
+	printf("%f\n",mc0.pos());
+	//posはTraVelPlanner関数によって上手く計算されるため速度は書かない
+	//posは位置情報、引数に50と入れれば50の位置までモーターが回る
 }
 
 void Rappinion_injection::back(){
-	mc0.pos(10.f);//posで0.fと入力すると今いる位置から初期設定した位置、つまりinitPosで指定した位置に戻る
+	mc0.pos(10.f);
+	//posで0.fと入力すると今いる位置から初期設定した位置、つまりinitPosで指定した位置に戻る
 }
